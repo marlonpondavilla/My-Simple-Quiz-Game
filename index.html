@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/queries.css">
+    <link rel="stylesheet" href="styles/quiz2.css">
+    <!-- Quiz Title -->
+    <title>General-Knowledge Quiz Game</title>
+</head>
+
+<body>
+    <!-- Quiz 1 -->
+    <div class="quiz-container">
+        <h1 class="quiz-title">General Knowledge</h1>
+        <h2 class="quiz-sub-title">Quiz Game</h2>
+        <p class="js-quiz-score"><span id="js-score-number">0</span>/10</p>
+        <p class="question-title" id="question-header"></p>
+        <span class="quiz-title-type">Programming</span>
+        <div class="answer-option">
+            <p class="opt-btn" id="opt-1">1. <span id="js-option-1"></span></p>
+            <p class="opt-btn" id="opt-2">2. <span id="js-option-2"></span></p>
+            <p class="opt-btn" id="opt-3">3. <span id="js-option-3"></span></p>
+            <p class="opt-btn" id="opt-4">4. <span id="js-option-4"></span></p>
+            <button class="refresh-btn" onclick="refreshPage()">Reload</button>
+            <button class="check-answer-btn btn1" onclick='checkAnswer1()'>Check Answer</button>
+            <button class="check-answer-btn btn2" onclick='checkAnswer2()'>Check Answer</button>
+            <button class="check-answer-btn btn3" onclick='checkAnswer3()'>Check Answer</button>
+            <button class="check-answer-btn btn4" onclick='checkAnswer4()'>Check Answer</button>
+            <!-- <button class="check-answer-btn" onclick="checkAnswer2()">Check Answer</button> -->
+        </div>
+    </div>
+
+    <!-- POPS OUT WHEN IN CORRECT STATE -->
+    <div class="result-popup">
+        <h4>Correct! 👏</h4>
+        <button class="ok-btn">Ok</button>
+    </div>
+
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
